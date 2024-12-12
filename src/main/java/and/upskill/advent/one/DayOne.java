@@ -72,7 +72,7 @@ public class DayOne {
     }
 
     public static void main(String[] args) {
-        Path path = Path.of(DayOne.class.getClassLoader().getResource("input.txt").getPath());
+        Path path = Path.of(DayOne.class.getClassLoader().getResource("day1_input.txt").getPath());
         List<Pairs> input = null;
         try {
             input = DayOne.readPairsFromFile(path.toString());

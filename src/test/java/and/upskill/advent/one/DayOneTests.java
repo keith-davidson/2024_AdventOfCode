@@ -175,7 +175,7 @@ class DayOneTests {
 
     @Test
     void canReadPairsFromFile() throws IOException {
-        Path path = Path.of(getClass().getClassLoader().getResource("test_input.txt").getPath());
+        Path path = Path.of(getClass().getClassLoader().getResource("day1_test_input.txt").getPath());
         List<Pairs> pairs = DayOne.readPairsFromFile(path.toString());
 
         assertThat(pairs, contains(
